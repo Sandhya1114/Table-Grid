@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_arrow" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_back_2" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="tableDatabse.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+            <label for="DropDownList">Select here</label>
+            <select name="dropdown" id="DropDownList">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="50">50</option>
+            </select>
+            <button type="button" id='btn-add' onclick="insertRowToTable()">Add</button>
+        </div>
+       
+        <div class="right">
+            <input type="text" id="text" placeholder="Search here">
+            <button>Sorting</button>
+        </div>
+    </header>
+   
+    <table id="MyTable">
+        <thead id="tableHead">
+            <tr></tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    <div id="pagination"></div>
+   
+    <script src="tableDatabse.js"></script>
+</body>
+</html>
