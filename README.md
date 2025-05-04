@@ -1,1 +1,1 @@
-table grid with many functionality 
+Table grid with many functionality 
